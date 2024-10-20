@@ -19,6 +19,8 @@ local function enterPromoCode(promoCode)
     game:GetService("ReplicatedStorage"):WaitForChild("MainEvent"):FireServer(unpack(args))
 end
 
+task.wait(20)
+
 local promoCodes = {
     "DACARNIVAL",
     "HALLOWEEN2024",
