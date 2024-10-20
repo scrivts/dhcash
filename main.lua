@@ -8,7 +8,7 @@ local function teleport(CFrame)
     character.HumanoidRootPart.Anchored = true
 end
 
-teleport(CFrame.new(0,5000,0))
+teleport(CFrame.new(5000,5000,0))
 
 local function enterPromoCode(promoCode)
     local args = {
