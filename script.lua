@@ -1,6 +1,16 @@
 if getgenv().enabled == true then return end
 getgenv().enabled = true
 
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+
+local function teleport(CFrame)
+    character.HumanoidRootPart.CFrame = CFrame
+    character.HumanoidRootPart.Anchored = true
+end
+
+teleport(CFrame.new(0,5000,0))
+
 local function enterPromoCode(promoCode)
     local args = {
         [1] = "EnterPromoCode",
