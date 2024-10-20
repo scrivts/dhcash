@@ -1,3 +1,6 @@
+if getgenv().enabled == true then return end
+getgenv().enabled = true
+
 local function enterPromoCode(promoCode)
     local args = {
         [1] = "EnterPromoCode",
