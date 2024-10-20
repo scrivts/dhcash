@@ -1,6 +1,3 @@
-if getgenv().enabled == true then return end
-getgenv().enabled = true
-
 local player = game.Players.LocalPlayer
 local character = player.Character or player.CharacterAdded:Wait()
 
