@@ -1,3 +1,5 @@
+--sigma
+
 local player = game.Players.LocalPlayer
 local character = player.Character or player.CharacterAdded:Wait()
 
